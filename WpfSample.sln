@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample", "WpfSample\WpfSample.csproj", "{48CAA736-203D-4990-8B66-0E5994CBCDBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample.Animation", "WpfSample.Animation\WpfSample.Animation.csproj", "{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {143AC187-A3D6-4F77-B068-8C59AE836E85}
+	EndGlobalSection
+EndGlobal
