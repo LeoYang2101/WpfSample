@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfSample.WpfSvgImage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample.WpfSvgImage.Controls" xmlns:svg="http://sharpvectors.codeplex.com/svgc/"
+        mc:Ignorable="d"
+            Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#ff0">
+        <Image Source="pack://application:,,,/WpfSample.WpfSvgImage;component/Assets/1.png" Width="100"/>
+        <svg:SvgViewbox Source="pack://application:,,,/WpfSample.WpfSvgImage;component/Assets/download.svg" />
+        <svg:SvgIcon Source="pack://application:,,,/WpfSample.WpfSvgImage;component/Assets/download.svg"/>
+
+        <local:CustomButton2 SvgPath="pack://application:,,,/WpfSample.WpfSvgImage;component/Assets/download.svg" Style="{StaticResource CustomButton2}" ButtonText="111" IconImage="pack://application:,,,/WpfSample.WpfSvgImage;component/Assets/1.png"/>
+    </Grid>
+</Window>

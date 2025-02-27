@@ -1,0 +1,66 @@
+﻿<Window x:Class="WpfSample.WpfListViewDataLoading.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSample.WpfListViewDataLoading"
+        mc:Ignorable="d"
+            Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="添加" Height="38" Width="80" Command="{Binding AddCommand}" Margin="10">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Background="#fff" CornerRadius="6" BorderBrush="Gray" BorderThickness="1">
+                                <TextBlock Text="添加" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Content="复位" Height="38" Width="80" Command="{Binding ResetCommand}" Margin="10">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Background="#fff" CornerRadius="6" BorderBrush="Gray" BorderThickness="1">
+                                <TextBlock Text="复位" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button  Height="38" Width="80" Click="Button_Click" Margin="10">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Background="#fff" CornerRadius="6" BorderBrush="Gray" BorderThickness="1">
+                                <TextBlock Text="查询" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+
+            <ListView x:Name="listView" Background="#fffff0" Width="420" Height="300" d:ItemsSource="{d:SampleData ItemCount=2}" ItemsSource="{Binding StuList}" BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.ScrollChanged="ListView_ScrollChanged" DataContextChanged="listView_DataContextChanged" IsVisibleChanged="listView_IsVisibleChanged">
+                <ListView.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <ContentControl>
+                            <Border Background="#fffff0" CornerRadius="6" Height="60" Width="390">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Name}" Width="80" VerticalAlignment="Center" Margin="20,0,0,0"/>
+                                    <TextBlock Text="{Binding Date}" Width="80" VerticalAlignment="Center" Margin="30,0,0,0"/>
+                                    <Border Background="{Binding Color}" Height="30" Width="30" CornerRadius="15" VerticalAlignment="Center" Margin="30,0,0,0" BorderBrush="#fff" BorderThickness="2"/>
+                                </StackPanel>
+                            </Border>
+                        </ContentControl>
+                    </ItemContainerTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
