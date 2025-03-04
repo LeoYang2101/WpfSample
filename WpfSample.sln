@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample", "WpfSample\WpfSample.csproj", "{48CAA736-203D-4990-8B66-0E5994CBCDBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.Animation", "WpfSample.Animation\WpfSample.Animation.csproj", "{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.KeyboardShortcut", "WpfSample.KeyboardShortcut\WpfSample.KeyboardShortcut.csproj", "{F5E75E8A-1A14-4AFE-A137-C829477A6179}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.WpfAdorner", "WpfSample.WpfAdorner\WpfSample.WpfAdorner.csproj", "{BAF4C846-1CB6-46E2-8C56-40FDA6EA5A64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.WpfListViewDataLoading", "WpfSample.WpfListViewDataLoading\WpfSample.WpfListViewDataLoading.csproj", "{2F5B0DF3-5B89-4A4C-8BF8-75650EFCF1C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.WpfSvgImage", "WpfSample.WpfSvgImage\WpfSample.WpfSvgImage.csproj", "{0CA629ED-EB58-45A8-897C-515D9D02F7BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CAA736-203D-4990-8B66-0E5994CBCDBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1FD75CD-B98C-46CC-B540-22D3F6CC109E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E75E8A-1A14-4AFE-A137-C829477A6179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E75E8A-1A14-4AFE-A137-C829477A6179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E75E8A-1A14-4AFE-A137-C829477A6179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E75E8A-1A14-4AFE-A137-C829477A6179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF4C846-1CB6-46E2-8C56-40FDA6EA5A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF4C846-1CB6-46E2-8C56-40FDA6EA5A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF4C846-1CB6-46E2-8C56-40FDA6EA5A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF4C846-1CB6-46E2-8C56-40FDA6EA5A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5B0DF3-5B89-4A4C-8BF8-75650EFCF1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5B0DF3-5B89-4A4C-8BF8-75650EFCF1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5B0DF3-5B89-4A4C-8BF8-75650EFCF1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5B0DF3-5B89-4A4C-8BF8-75650EFCF1C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA629ED-EB58-45A8-897C-515D9D02F7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA629ED-EB58-45A8-897C-515D9D02F7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA629ED-EB58-45A8-897C-515D9D02F7BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA629ED-EB58-45A8-897C-515D9D02F7BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {143AC187-A3D6-4F77-B068-8C59AE836E85}
+	EndGlobalSection
+EndGlobal
