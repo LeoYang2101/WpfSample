@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WpfSample.Communication
+namespace WpfSample.WpfMqttClient
 {
     /// <summary>
     /// Interaction logic for App.xaml

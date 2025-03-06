@@ -1,7 +1,7 @@
-﻿<Application x:Class="WpfSample.Communication.App"
+﻿<Application x:Class="WpfSample.WpfMqttClient.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfSample.Communication"
+             xmlns:local="clr-namespace:WpfSample.WpfMqttClient"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
