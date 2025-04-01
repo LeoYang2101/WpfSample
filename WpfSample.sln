@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfSample.WpfDependencyInje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample.WpfAutofac", "WpfSample.WpfAutofac\WpfSample.WpfAutofac.csproj", "{3A035BB3-5641-4097-B146-EF31A0B78A7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfSample.WpfSqlite", "WpfSample.WpfSqlite\WpfSample.WpfSqlite.csproj", "{EEAB00BF-910F-4658-B629-9F885F971126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{3A035BB3-5641-4097-B146-EF31A0B78A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A035BB3-5641-4097-B146-EF31A0B78A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A035BB3-5641-4097-B146-EF31A0B78A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEAB00BF-910F-4658-B629-9F885F971126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEAB00BF-910F-4658-B629-9F885F971126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEAB00BF-910F-4658-B629-9F885F971126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEAB00BF-910F-4658-B629-9F885F971126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
