@@ -6,8 +6,14 @@
         xmlns:local="clr-namespace:WpfSample.WpfAdorner"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <!--<Border Height="100" Width="100" Background="Yellow" x:Name="border" MouseEnter="border_MouseEnter" MouseLeave="border_MouseLeave"/>-->
-        <local:BorderAdorner Height="100" Width="100" Background="red"/>
-    </Grid>
+    <StackPanel>
+        <Button Width="300" Height="60" Content="BorderAdorner效果" Loaded="Button_Loaded"/>
+        <Border Width="300" Height="80" Background="Green"  Loaded="Border_Loaded">
+            <TextBlock Text="BorderAdorner+AnchorAdorner效果"/>
+        </Border>
+        <Border Width="300" Height="100" Background="Yellow" x:Name="border" MouseEnter="border_MouseEnter" MouseLeave="border_MouseLeave">
+            <TextBlock Text="鼠标移入显示AnchorAdorner效果"/>
+        </Border>
+        <TextBlock Text="本例中实现了两个装饰器 BorderAdorner\AnchorAdorner，在控件的AdornerLayer中加入装饰器即可" FontSize="16"/>        
+    </StackPanel>
 </Window>

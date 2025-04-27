@@ -23,9 +23,9 @@ namespace WpfSample.WpfAdorner
         {
             base.OnRender(drawingContext);
             var size = this.AdornedElement.DesiredSize;//获取需要装饰的UI元素的真实Size
-            Rect rect = new Rect(size);//定义一个矩形，从0,0开始，大小为size
+            //Rect rect = new Rect(size);//定义一个矩形，从0,0开始，大小为size
             var pen = new Pen(Brushes.Black, 2);
-            pen.DashStyle = DashStyles.Solid;
+            //pen.DashStyle = DashStyles.Solid;
             //drawingContext.DrawRectangle(Brushes.Transparent, pen, rect);//绘制矩形，第1个参数是填充色，第2个参数是边框，第3个参数是矩形大小，位置
 
             drawingContext.DrawEllipse(Brushes.WhiteSmoke, pen, new Point(0, size.Height / 2), 3, 3);//绘制锚点，左中
