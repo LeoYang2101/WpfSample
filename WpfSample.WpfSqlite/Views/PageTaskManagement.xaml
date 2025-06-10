@@ -9,7 +9,7 @@
       xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="PageTaskManagement">
+      Title="PageTaskManagement" x:Name="pageRoot">
     <Page.Resources>
         <resource:PriorityToTextConverter x:Key="PriorityToTextConverter"/>
         <resource:StatusToTextConverter x:Key="StatusToTextConverter"/>
@@ -77,6 +77,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -84,12 +85,22 @@
             <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Title, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
 
             <Label Grid.Row="1" Grid.Column="0" Content="分类:"/>
-            <ComboBox Grid.Row="1" Grid.Column="1" 
-                      ItemsSource="{Binding DataContext.Categories, RelativeSource={RelativeSource AncestorType=Window}}"
-                      DisplayMemberPath="Name"
-                      SelectedValuePath="CategoryId"
-                      SelectedValue="{Binding CategoryId}"
-                      Margin="5"/>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox Grid.Column="0" 
+          ItemsSource="{Binding DataContext.Categories, RelativeSource={RelativeSource AncestorType=Page}}"
+          DisplayMemberPath="Name"
+          SelectedValuePath="CategoryId"
+          SelectedValue="{Binding CategoryId}"
+          Margin="5"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBox Text="{Binding DataContext.AddCategoryText,RelativeSource={RelativeSource AncestorType=Page}}" Margin="5" Width="Auto" MinWidth="160"/>
+                    <Button Command="{Binding DataContext.AddCategoryCommand,RelativeSource={RelativeSource AncestorType=Page}}" Content="添加"/>
+                </StackPanel>
+            </Grid>
 
             <Label Grid.Row="2" Grid.Column="0" Content="优先级:"/>
             <ComboBox Grid.Row="2" Grid.Column="1" 
@@ -103,8 +114,44 @@
             <Label Grid.Row="3" Grid.Column="0" Content="截止日期:"/>
             <DatePicker Grid.Row="3" Grid.Column="1" SelectedDate="{Binding DueDate}" Margin="5"/>
 
-            <Label Grid.Row="4" Grid.Column="0" Content="描述:"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Description}" 
+            <Label Grid.Row="4" Grid.Column="0" Content="标签"/>
+            <Grid Grid.Row="4" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <ListBox Grid.Column="0" 
+                         Name="TagsListBox"
+                         ItemsSource="{Binding DataContext.Tags, RelativeSource={RelativeSource AncestorType=Page}}"
+                         DisplayMemberPath="Name"
+                         SelectionMode="Multiple"
+                         Margin="5">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}"/>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                </ListBox>
+                
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <TextBox Text="{Binding DataContext.AddTagText, RelativeSource={RelativeSource AncestorType=Page}}" 
+                             Margin="5" Width="Auto" MinWidth="160"/>
+                    <Button Command="{Binding DataContext.AddTagCommand, RelativeSource={RelativeSource AncestorType=Page}}" 
+                            Content="添加标签"/>
+                </StackPanel>
+            </Grid>
+            <!--<ComboBox Grid.Row="4" Grid.Column="1" 
+          SelectedIndex="{Binding TaskTagEntitys}"
+                       ItemsSource="{Binding DataContext.Tags, RelativeSource={RelativeSource AncestorType=Page}}"
+          Margin="5">
+                --><!--<ComboBoxItem Content="高"/>
+                <ComboBoxItem Content="中"/>
+                <ComboBoxItem Content="低"/>--><!--
+            </ComboBox>-->
+
+            <Label Grid.Row="5" Grid.Column="0" Content="描述:"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Description}" 
                      AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
                      Margin="5" Height="100"/>
         </Grid>

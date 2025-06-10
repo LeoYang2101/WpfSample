@@ -7,6 +7,9 @@ using System.Text;
 
 namespace WpfSample.WpfSqlite.Models
 {
+    /// <summary>
+    /// 标签
+    /// </summary>
     public class TagEntity
     {
         [Key]

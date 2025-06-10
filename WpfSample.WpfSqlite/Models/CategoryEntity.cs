@@ -7,6 +7,9 @@ using System.Text;
 
 namespace WpfSample.WpfSqlite.Models
 {
+    /// <summary>
+    /// 分类
+    /// </summary>
     public class CategoryEntity
     {
         [Key]

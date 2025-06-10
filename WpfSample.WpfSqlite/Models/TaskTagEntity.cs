@@ -8,6 +8,9 @@ using System.Text;
 
 namespace WpfSample.WpfSqlite.Models
 {
+    /// <summary>
+    /// 任务表
+    /// </summary>
     public class TaskTagEntity
     {
         [Key]
